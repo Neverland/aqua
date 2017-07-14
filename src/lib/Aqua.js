@@ -5,7 +5,7 @@
  * @since 2017/7/14
  */
 
-import defaultOption from './option';
+import defaultOption from '../option/index';
 
 export default
 class Aqua {

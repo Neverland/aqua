@@ -15,9 +15,9 @@ var _createClass = function () { function defineProperties(target, props) { for 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       * @since 2017/7/14
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       */
 
-var _option = require('./option');
+var _index = require('../option/index');
 
-var _option2 = _interopRequireDefault(_option);
+var _index2 = _interopRequireDefault(_index);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -38,7 +38,7 @@ var Aqua = function () {
             $plugin: {}
         };
 
-        _extends({}, this, _option2.default, option);
+        _extends({}, this, _index2.default, option);
 
         this.initialize();
     }

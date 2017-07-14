@@ -5,6 +5,6 @@
  * @since 2017/7/14
  */
 
-import Aqua from './lib/aqua';
+import Aqua from './lib/Aqua';
 
 export default Aqua;

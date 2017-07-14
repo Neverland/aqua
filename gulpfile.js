@@ -14,6 +14,7 @@ gulp.task('scripts', function () {
     return gulp.src('src/**/*.js')
         .pipe(babel())
         // .pipe(uglify())
+        //.pipe(concat('index.js'))
         .pipe(gulp.dest('./dist'));
 });
 
