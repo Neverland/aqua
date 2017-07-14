@@ -1,4 +1,16 @@
-define(['exports', './lib/aqua'], function (exports, _aqua) {
+(function (global, factory) {
+  if (typeof define === "function" && define.amd) {
+    define(['exports', './lib/aqua'], factory);
+  } else if (typeof exports !== "undefined") {
+    factory(exports, require('./lib/aqua'));
+  } else {
+    var mod = {
+      exports: {}
+    };
+    factory(mod.exports, global.aqua);
+    global.index = mod.exports;
+  }
+})(this, function (exports, _aqua) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -15,7 +27,19 @@ define(['exports', './lib/aqua'], function (exports, _aqua) {
 
   exports.default = _aqua2.default;
 });
-define(['exports', './option'], function (exports, _option) {
+(function (global, factory) {
+    if (typeof define === "function" && define.amd) {
+        define(['exports', './option'], factory);
+    } else if (typeof exports !== "undefined") {
+        factory(exports, require('./option'));
+    } else {
+        var mod = {
+            exports: {}
+        };
+        factory(mod.exports, global.option);
+        global.Aqua = mod.exports;
+    }
+})(this, function (exports, _option) {
     'use strict';
 
     Object.defineProperty(exports, "__esModule", {
@@ -178,7 +202,19 @@ define(['exports', './option'], function (exports, _option) {
 
     exports.default = Aqua;
 });
-define(["exports"], function (exports) {
+(function (global, factory) {
+  if (typeof define === "function" && define.amd) {
+    define(["exports"], factory);
+  } else if (typeof exports !== "undefined") {
+    factory(exports);
+  } else {
+    var mod = {
+      exports: {}
+    };
+    factory(mod.exports);
+    global.index = mod.exports;
+  }
+})(this, function (exports) {
   "use strict";
 
   Object.defineProperty(exports, "__esModule", {
