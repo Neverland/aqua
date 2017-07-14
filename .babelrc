@@ -3,14 +3,8 @@
     "plugins": [
         "transform-object-assign",
         "array-includes",
-        [
-            "transform-es2015-modules-umd",
-            {
-                "globals": {
-                    "es6-promise": "Promise"
-                }
-            }
-        ]
+        "transform-es2015-modules-commonjs",
+        "add-module-exports"
     ],
     "ignore": [
         "dist/*.js"
