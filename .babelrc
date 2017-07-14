@@ -1,0 +1,11 @@
+{
+    "presets": ["es2015"],
+    "plugins": [
+        "transform-object-assign",
+        "array-includes",
+        "transform-es2015-modules-amd"
+    ],
+    "ignore": [
+        "dist/*.js"
+    ]
+}
