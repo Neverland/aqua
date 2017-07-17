@@ -5,9 +5,8 @@
  * @since 2017/7/14
  */
 
-import defaultOption from '../option/index';
+let defaultOption = require('../option/index');
 
-export default
 class Aqua {
     constructor(setting = {}) {
         let option = {
@@ -88,3 +87,5 @@ class Aqua {
 
     }
 }
+
+module.exports = Aqua;

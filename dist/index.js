@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * @file index.js
  * @author ienix(guoaimin01@baidu.com)
@@ -5,6 +7,6 @@
  * @since 2017/7/14
  */
 
-let Aqua = require('./lib/Aqua');
+var Aqua = require('./lib/Aqua');
 
 module.exports = Aqua;

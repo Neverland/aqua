@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * @file index
  * @author ienix(guoaimin01@baidu.com)
@@ -6,9 +8,9 @@
  */
 
 module.exports = {
-    TIMEOUT: 10,
-    RETRY: true,
-    RETRY_COUNT: 3,
-    CLIENT: true,
-    BROWSER: false
+  TIMEOUT: 10,
+  RETRY: true,
+  RETRY_COUNT: 3,
+  CLIENT: true,
+  BROWSER: false
 };
