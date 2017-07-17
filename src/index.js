@@ -1,4 +1,4 @@
-/**
+/*!
  * @file index.js
  * @author ienix(enix@foxmail.com)
  *

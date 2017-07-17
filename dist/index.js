@@ -4,7 +4,7 @@
 	(global.aqua = factory());
 }(this, (function () { 'use strict';
 
-/**
+/**!
  * @file index
  * @author ienix(enix@foxmail.com)
  *
@@ -85,8 +85,6 @@ var _extends = Object.assign || function (target) {
  *
  * @since 2017/7/14
  */
-
-// let defaultOption = require('../option/index');
 
 var Aqua$1 = function () {
     function Aqua() {
@@ -188,16 +186,12 @@ var Aqua$1 = function () {
     return Aqua;
 }();
 
-/**
+/*!
  * @file index.js
  * @author ienix(enix@foxmail.com)
  *
  * @since 2017/7/14
  */
-
-// let Aqua = require('./lib/Aqua');
-
-// module.exports = Aqua;
 
 return Aqua$1;
 
