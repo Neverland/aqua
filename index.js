@@ -9,7 +9,9 @@ var _Aqua = require('./lib/Aqua');
 
 var _Aqua2 = _interopRequireDefault(_Aqua);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 exports.default = _Aqua2.default; /**
                                    * @file index.js
@@ -17,6 +19,7 @@ exports.default = _Aqua2.default; /**
                                    *
                                    * @since 2017/7/14
                                    */
+
 },{"./lib/Aqua":2}],2:[function(require,module,exports){
 'use strict';
 

@@ -2,7 +2,7 @@
   "name": "aqua",
   "version": "1.0.0",
   "description": "通用端能力解决方案",
-  "main": "dist/index.m.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,8 +15,10 @@
   "bugs": {
     "url": "https://github.com/Neverland/aqua/issues"
   },
+  "browserify": {
+    "transform": [["babelify", { "presets": ["es2015"] }]]
+  },
   "homepage": "https://github.com/Neverland/aqua#readme",
-  "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-plugin-add-module-exports": "^0.2.1",
