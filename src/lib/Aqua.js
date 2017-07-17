@@ -1,6 +1,6 @@
 /**
  * @file Aqua.js
- * @author ienix(guoaimin01@baidu.com)
+ * @author ienix(enix@foxmail.com)
  *
  * @since 2017/7/14
  */

@@ -1,6 +1,6 @@
 /**
  * @file gulpfile
- * @author ienix(guoaimin01@baidu.com)
+ * @author ienix(enix@foxmail.com)
  *
  * @since 2017/7/14
  */
@@ -13,8 +13,8 @@ var concat = require('gulp-concat');
 gulp.task('scripts', function () {
     return gulp.src('src/**/*.js')
         .pipe(babel())
-        // .pipe(uglify())
-        //.pipe(concat('index.js'))
+        .pipe(uglify())
+        .pipe(concat('index.js'))
         .pipe(gulp.dest('./dist'));
 });
 

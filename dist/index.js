@@ -1,12 +1,3 @@
-'use strict';
-
-/**
- * @file index.js
- * @author ienix(guoaimin01@baidu.com)
- *
- * @since 2017/7/14
- */
-
-var Aqua = require('./lib/Aqua');
-
-module.exports = Aqua;
+"use strict";var Aqua=require("./lib/Aqua");module.exports=Aqua;
+"use strict";function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}var _typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},_extends=Object.assign||function(t){for(var e=1;e<arguments.length;e++){var o=arguments[e];for(var n in o)Object.prototype.hasOwnProperty.call(o,n)&&(t[n]=o[n])}return t},_createClass=function(){function t(t,e){for(var o=0;o<e.length;o++){var n=e[o];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(t,n.key,n)}}return function(e,o,n){return o&&t(e.prototype,o),n&&t(e,n),e}}(),defaultOption=require("../option/index"),Aqua=function(){function t(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};_classCallCheck(this,t),_extends({},this,defaultOption,{version:"0.0.1",debug:!1,setting:e,$methodList:[],$methodCount:0,$plugin:{}}),this.initialize()}return _createClass(t,[{key:"initialize",value:function(){var t=this,e=arguments;["method","error","mockup"].forEach(function(o){var n=t[o];n||(n=function(){return t.placeholder.apply(t,e)}),"object"===(void 0===n?"undefined":_typeof(n))&&(t["$"+o]||(t["$"+o]=n))}),this.scanMethod(),this.$registerMethod()}},{key:"$defaultData",value:function(t,e){var o={method:t,support:!1,message:"The method `"+t+"` is not support!",data:{}};return this.debug&&(o=this.$mockup.apply(this,arguments)),o}},{key:"$registerMethod",value:function(){var t=this;this.$methodList.forEach(function(e){t.$method[e]=t.placeholder(e)})}},{key:"$excute",value:function(t,e){return this.debug?Promise.resolve(this.$defaultData.apply(this,arguments)):-1!==this.$methodList.indexOf(t)?this.$method.apply(this,arguments):void 0}},{key:"scanMethod",value:function(){if("object"===_typeof(this.$method))return!1;this.$methodList=Object.keys(this.$method),this.$methodCount=this.$methodList.length}},{key:"placeholder",value:function(){return this.$defaultData.apply(this,arguments)}}],[{key:"use",value:function(){}}]),t}();module.exports=Aqua;
+"use strict";module.exports={TIMEOUT:10,RETRY:!0,RETRY_COUNT:3,CLIENT:!0,BROWSER:!1};
