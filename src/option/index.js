@@ -5,7 +5,7 @@
  * @since 2017/7/14
  */
 
-module.exports = {
+export default {
     TIMEOUT: 10,
     RETRY: true,
     RETRY_COUNT: 3,

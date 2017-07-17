@@ -1,1 +1,0 @@
-"use strict";module.exports={TIMEOUT:10,RETRY:!0,RETRY_COUNT:3,CLIENT:!0,BROWSER:!1};

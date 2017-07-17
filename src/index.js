@@ -5,6 +5,6 @@
  * @since 2017/7/14
  */
 
-let Aqua = require('./lib/Aqua');
+import Aqua from './lib/Aqua';
 
-module.exports = Aqua;
+export default Aqua;
