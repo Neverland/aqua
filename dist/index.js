@@ -150,7 +150,7 @@ var Aqua$1 = function () {
             var _this2 = this;
 
             this.$methodList.forEach(function (methodName) {
-                _this2.$method[methodName] = _this2.placeholder(methodName);
+                return _this2.$method[methodName] = _this2.placeholder(methodName);
             });
         }
     }, {
@@ -167,7 +167,7 @@ var Aqua$1 = function () {
     }, {
         key: 'scanMethod',
         value: function scanMethod() {
-            if ('object' === _typeof(this.$method)) {
+            if ('object' !== _typeof(this.$method)) {
                 return false;
             }
 

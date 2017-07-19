@@ -60,9 +60,7 @@ class Aqua {
         return data;
     }
     $registerMethod() {
-        this.$methodList.forEach(methodName => {
-            this.$method[methodName] = this.placeholder(methodName);
-        });
+        this.$methodList.forEach(methodName =>  this.$method[methodName] = this.placeholder(methodName));
     }
     $excute(method, param) {
         if (this.debug) {
@@ -74,7 +72,7 @@ class Aqua {
         }
     }
     scanMethod() {
-        if ('object' === typeof this.$method) {
+        if ('object' !== typeof this.$method) {
             return false;
         }
 
